@@ -3,6 +3,12 @@ var request = require("request");
 var cheerio = require("cheerio");
 var async = require('async');
 
+// 1.在request通过图片地址下载时，绑定error事件防止爬虫异常的中断。
+//  2.通过async的mapLimit限制并发。 
+//  3.加入请求报头，防止ip被屏蔽。
+//   4.获取一些图片和超链接地址，可能是相对路径（待考虑解决是否有通过方法）。
+
+
 //目标网址
 var url = 'http://www.ivsky.com/tupian/ziranfengguang/';
 
