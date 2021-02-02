@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "apify": "^1.0.0",
+    "cheerio": "^1.0.0-rc.5",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "nodemon": "^2.0.7",
+    "request": "^2.88.2",
+    "superagent": "^6.1.0"
+  },
+  "scripts": {
+    "start": "nodemon ./pachu/index"
+  }
+}
